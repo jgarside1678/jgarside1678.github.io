@@ -54,10 +54,33 @@ h2{
 	height:50px;
 	position:fixed;
 	padding-right:80px;
-	box-sizing:border-box;
-	background-color: rgba(01, 01, 01, 0.7);
+	background-color: #101010;
+	border-bottom:2px solid white;
 	margin-right:20px;
 
+}
+.SearchBarOuter{
+	background-color:white;
+	font-family:Bahnschrift SemiBold;
+	position:relative;
+	margin-left:50%;
+	margin-top:10px;
+	float:left;
+	width:auto;
+	padding-left:24px;
+}
+.fa-search{
+	position:absolute;
+	top:5px;
+	left:2px;
+	
+}
+.SearchBar{
+	border:none;
+	padding:6px;
+}
+.SearchBar:focus{
+	outline:none;
 }
 .Login{
 	float:right;
