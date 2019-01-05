@@ -8,16 +8,12 @@ h1{
 	margin-top:20px;
 	font-size:1.7rem;
 }
-h1, p{
-	font-family:Impact, fantasy;
+h1, h2, h3, h4, h5, p, a, div, button{
 	color:inherit, #777777;
-}
-p{
-	font-family:Bahnschrift SemiBold;
+	font-family: 'Signika', sans-serif;
 }
 h5{
 	font-size:1.6em;
-	font-family:Bahnschrift;
 	font-weight:bold;
 	margin-bottom:16px;
 }
@@ -48,25 +44,31 @@ h2{
 }
 #Header{
 	overflow:hidden;
-	z-index:1;
+	z-index:1000;
 	color:#bfbfbf;
-	display:none;
+	display:block;
 	width: 100%;
 	height:50px;
 	position:fixed;
-	padding-right:80px;
+	padding:0px 80px 0px 50px;
 	background-color: #101010;
 	border-bottom:2px solid white;
 
 }
+.HeaderSlogan{
+	display:inline-block;
+	color:white;
+	font-size:1.5em;
+	font-weight:300;
+	margin-top:14px;
+}
 .SearchBarOuter{
 	background-color:white;
-	font-family:Bahnschrift SemiBold;
 	position:relative;
-	margin-left:20%;
-	margin-top:10px;
-	float:left;
-	width:auto;
+	display:inline-block;
+	width:200px;
+	margin-top:-6px;
+	margin-right:20px;
 	padding-left:24px;
 }
 .fa-search{
@@ -83,13 +85,21 @@ h2{
 	outline:none;
 }
 .Login{
+	font-size:0.9em;
 	float:right;
-	width:500px;
+	width:auto;
 	height:100%;
 	padding:20px 50px 20px 20px;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 	margin-right:10%;
+}
+.LoginInfo{
+	display:inline-block;
+}
+.HeaderInfo{
+	color: #bfbfbf;
+	display:inline-block;
 }
 #Sidebar{
 	-ms-grid-row:1;
@@ -100,6 +110,7 @@ h2{
 	background-color:black;
 }
 .FixedSideBar{
+	z-index:100;
 	position:fixed;
 	width:120px;
 	height:100%;
@@ -107,6 +118,7 @@ h2{
 	box-shadow: 0px 0px 6px 0px black;
 }
 .SideWidget{
+	z-index:100;
 	height:100%;
 	width:100%;
 	-webkit-box-sizing:border-box;
@@ -115,6 +127,7 @@ h2{
 }
 
 .SideNav{
+	z-index:100;
 	padding:20px 0px 0px 20px;
 	height:58px;
 	font-size: 1em;
@@ -125,7 +138,6 @@ h2{
 	background-color:transparent;
 	border:none;
 	color:#bbb;
-	font-family:Bahnschrift ;
 	font-weight:bold;
 	position:relative;
 	text-align:left;
@@ -146,7 +158,7 @@ h2{
 	position:absolute;
 	height:auto;
 	background-color:white;
-	z-index: 1;
+	z-index: 1000;
 	box-shadow: 1px 1px black, 1px -1px black, 0px -1px black, 0px 1px black;
 }
 .MenuImg{
@@ -170,7 +182,6 @@ h2{
 	display:none;
 	transition-duration:0.5s;
 	box-sizing:border-box;
-	font-family:Bahnschrift ;
 	font-size:1.4em;
 	color:#bbb;
 	padding: 12px 0px 4px 0px;
@@ -197,81 +208,68 @@ h2{
 	
 	width:120px;
 }
-.Intro{
-	text-align:center;
-	color:#bfbfbf;
-	-webkit-box-sizing:border-box;
-	box-sizing:border-box;
-	height:100vh;
-	overflow:hidden;
-}
 #Video1{
 	width:100%;
 	background-size:cover;
+	margin-top:-20px;
 }
 .videoVolume{
+	color:#777;
 	width:30px;
 	height:30px;
 	position:absolute;
-	top:14px;
+	top:60px;
 	left:130px;
 	font-size:1.4em;
 }
 .Welcome{
-	width:1000px;
+	width:auto;
+	height:400px;
 	display:none;
 	position:absolute;
 	left:50%;
-	margin-left:-400px;
-	bottom:50%;
+	margin-left:-260px;
+	top:40%;
 	color:white;
-	font-size:6em;
-	font-family:Bahnschrift SemiBold;
-}
-#JoinUsNow{
-	box-sizing:border-box;
-	padding-top:80px;
-	display:none;
-	margin:auto;
-	text-align:center;
 	font-size:2em;
-	font-family:Bahnschrift SemiBold;
-	width:100%;
-	height:200px;
-	color:black;
-	background-color:white;
-	border:none;
 }
 .Section{
-	border-bottom:6px solid white;
+	border-bottom:4px solid white;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 	width:100%;
 	height:100vh;
 }
 .SectionInfo{
+	padding:20px;
 	Color:white;
-	display: flex;
+	display: inline-flex;
     flex-flow: column;
     align-items: flex-start;
 }
+.SectionImages{
+	display:inline-block;
+	width:30%;
+	overflow:hidden;
+	height:100%;
+	background-color:white;
+	
+}
+.SectionImage{
+	width:100%;
+}
 .SectionInfo h1{
 	margin-bottom:20px;
-	padding:20px 30px 10px 30px;
-	background-color:white;
+	padding:20px 30px 10px 0px;
 	width:auto;
-	color:black;
-	font-size:6em;
-	font-family:Bahnschrift;
+	color:white;
+	font-size:4em;
 	font-weight:1000;
 
 }
 
 #Section1{
-	padding:0px;
-	box-sizing:border-box;
 	background-color: rgba(10,10,10,1);
-	margin: 0% auto 0% auto;
 	overflow:hidden;
 }
 #Section2{
@@ -279,6 +277,22 @@ h2{
 	background-repeat:no-repeat;
 	background-size:cover;
 	padding:100px;
+	position:relative;
+}
+#Section2 img{
+	position:absolute;
+	width:400px;
+	height:400px;
+	z-index:1;
+}
+#Section2Img0:hover{
+	z-index:3;
+}
+#Section2Img1:hover{
+	z-index:3;
+}
+#Section2Img2:hover{
+	z-index:3;
 }
 #Section3{
 	background-image: url("../assets/SectionBG/B2.jpg");
@@ -289,8 +303,7 @@ h2{
 #Section4{
 	background-image: url("../assets/SectionBG/B3.jpg");
 	background-repeat:no-repeat;
-	background-size: cover;
-	padding:100px;
+	background-size: auto 100%;
 	
 }
 #Section5{
@@ -315,24 +328,21 @@ h2{
 .ShoeInfo H1{
 	box-sizing:border-box;
 	display:inline;
-	padding:20px 20px 10px 20px;
+	padding:20px 20px 10px 0px;
 	width:auto;
-	color: black;
-	background-color:white;
+	color: white;
 	font-size:4em;
-	font-family:Bahnschrift;
 	font-weight: 1000;
 }
 
 .ShoeInfoBuyNow{
 	display:inline;
-	padding:10px;
+	padding:14px;
 	width:auto;
 	color: black;
 	background-color:white;
 	margin-top:10px;
-	font-size:2em;
-	font-family:Bahnschrift;
+	font-size:1em;
 	font-weight: 600;
 }
 
@@ -342,7 +352,6 @@ h2{
   align-items: flex-start;
 }
 .ShoeInfoDescription{
-	font-family:Bahnschrift;
 	font-weight: 400;
 	color:white;
 	font-size:2em;
@@ -486,7 +495,6 @@ h2{
 .Footerlink{
 	margin-bottom:4px;
 	font-size:0.8em;
-	font-family:Bahnschrift;
 	font-weight:300;
 	padding-bottom:2px;
 }
@@ -506,7 +514,6 @@ h2{
 	margin-bottom:0px;
 	font-size:1.6em;
 	color:black;
-	font-family:Bahnschrift;
 	font-weight:bold;
 }
 .SideNavH1:after {
@@ -522,38 +529,382 @@ h2{
 	font-size:1.2em;
 	font-weight:900;
 	color:black;
-	font-family:Bahnschrift;
 	font-weight:bold;
 }
 .SideNavLink{
 	margin-bottom:16px;
 	display:block;
-	font-family:Bahnschrift;
 	font-weight:300;
 }
 
 /* PRODUCT PAGES  */
 
 .ProductPageSection{
+	height:auto;
 	overflow:hidden;
 	box-sizing:border-box;
 	color:white;
-	padding-top: 30px;
-	border-bottom:6px solid #101010;
+	border-bottom:10px solid #eceff1;
 }
 .ProductTitle{
-	padding:30px 0px 50px 40px;
-}
-.ProductPageSection h1{
+	font-weight:1000;
+	margin:0px;
+	color:black;
+	background-color:white;
+	padding:20px;
+	display:inline-block;
 	font-size:3.6em;
 }
-.ProductPageSection p{
-	font-size:1.6em;
-}
 .ProductPageSectionDisplay{
+	padding-top:20px;
+	display:inline-flex;
 	width:100%;
+	height:850px;
+	background-color:white;
+}
+.ProductPageSectionDetails{
+	padding:60px 0px 60px 0px;
+	width:100%;
+	height:auto;
+	background-color:white;
+}
+.ProductDetails{
+	padding-right:100px;
+	color:black; 
+	font-weight:1000;
+	font-size:3em;
+}
+.ProductDetails2{
+	padding:60px 100px 60px 0px;
+	margin:auto;
+	width:1200px;
+	height:auto;
+	color:black;
+	font-weight:800;
+}
+.ProductDetails3{
+	margin:auto;
+	padding-right:100px;
+	width:1200px;
+}
+.ProductDetailsInfo{
+	width:400px;
+	display:inline-block;
+	text-align:left;
+	margin-right:200px;
+}
+.ProductDetailsImage{
+	display:inline-block;
+	width:400px;
+	height:400px;
+}
+.ProductPageDefault{
+	padding-top:10px;
+	width:100%;
+	margin:auto;
+	text-align:center;
+	min-height:900px;
+	background-color:white;
+}
+#ProductImagesLarge{
+	margin-right:5px;
+	height:850px;
+	width:850px;
+	overflow:hidden;
+}
+.ProductImageLarge{
 	height:100%;
+	display:none;
+}
+#ProductImagesSmall{
+	height:850px;
+	width:200px;
+	min-width:200px;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+.ProductImageSmall{
+	box-sizing:border-box;
+	width:100%;
+	margin-bottom:5px;
+}
+#ProductDescription{
+	text-align:left;
+	border-left:1px solid #ebecf1;
+	height:700px;
+	width:auto;
+	color:black;
+	padding:20px;
+	margin-right:100px;
+}
+#ProductColours{
+	padding:20px 0px 20px 10px;
+}
+.ProductColour{
+	box-sizing:border-box;
+	width:80px;
+	height:80px;
+	margin-right:20px;
+	display:inline-block;
+	border-radius:50%;
+	background-size: 100% 100%;
+	background-color:grey;
+}
+#Colour0{
+	border: 1px solid black;
+}
+.BreadCrumbs{
+	box-sizing:border-box;
+	padding: 10px 0px 10px 20px;
+}
+.Crumb{
+	font-weight:200;
+	margin-right:20px;
+	display:inline-block;
+	color:white;
+	
+}
+#CartRecent{
+	box-sizing:border-box;
+	top:52px;
+	width:300px;
+	position:fixed;
+	z-index:1;
+	height:80px;
+	background-color:white;
+	right:10px;
+	color:black;
+	display:none;
+	border:1px solid black;
+	text-align:left;
+	overflow:hidden;
+}
+.RecentCartText{
+	display:inline-block;
+	padding:6px 0px 0px 10px;
+}
+.RecentCartDetails{
+	font-size:0.7em;
+	font-weight:300;
+	display:block;
+}
+#CartRecent img{
+	display:inline-block;
+	height:80px;
+	width:80px;
+	
+}
+
+.DefaultMessage{
+	width:100%;
+	height:100px;
+	text-align:center;
+	color:black;
+	padding:200px 20px 20px 10px;
+	box-sizing:border-box;
+	margin-left:-50px;
+}
+.AvailableProducts{
+	box-sizing:border-box;
+	height:100%;
+	padding:100px 200px 200px 100px;
+}
+.AvailableProduct{
+	overflow:hidden;
+	box-sizing:border-box;
+	margin-right:10px;
+	height:260px;
+	width:200px;
+	display:inline-block;
+}
+.AvailableProduct:hover{
+	border:1px solid grey;
+	height:auto;
+}
+
+.AvailableProductImage{
+	width:200px;
+	height:200px;
+	background-image: url("../assets/Shoes/Default.png");
+	background-size: 100% auto;
+}
+
+.AvailableProductTitle{
+	color:black;
+	text-align:left;
+	padding:6px;
+	font-size:1.2em;
+}
+.AvailableProductRating{
+	overflow:hidden;
+	color:black;
+	text-align:left;
+	padding:6px;
+	font-size:1em;
+}
+.AvailableProductDescription{
+	color:black;
+	text-align:left;
+	padding:6px;
+	font-size:1em;
+	font-weight:100;
+}
+#SizeChart{
+	box-sizing:border-box;
+	width:600px;
+	height:200px;
+	padding:20px;
+}
+.Size{
+	text-align:center;
+	box-sizing:border-box;
+	width:80px;
+	height:40px;
+	font-weight:300;
+	font-size:1.2em;
+	display:inline-block;
+	border:1px solid grey;
+	padding:10px;
+	margin-bottom:6px;
+	
+}
+.CartButton{
+	margin-left:20px;
+	background-color:black;
+	color:white;
+	padding:20px;
+	
+}
+#ProductPrice{
+	display:inline-block;
+	margin-bottom:10px;
+}
+#DropDownQuantity{
+	font-size:1.2em;
+	padding:14px 10px 10px 10px;
+	width:50px;
+	height:100%;
+	display:inline-block;
 	background-color:white;
 }
 
+.ProductQuantity{
+	float:right;
+	display:inline-block;
+	border:1px solid grey;
+	box-sizing:border-box;
+	width:auto;
+	height:auto;
+	position:relative;
+}
+#SelectedQuantity{
+	display:inline-block;
+	padding:14px 10px 14px 10px;
+}
+#OtherQuantitys{
+	display:none;
+	z-index:1;
+	position:absolute;
+	background-color:white;
+	width:80px;
+	left:-1px;
+	border:1px solid grey;
+	height:200px;
+	overflow:scroll;
+	overflow-x:hidden;
+}
+.Quantity{
+	padding:14px 10px 14px 10px;
+	border-top:1px solid rgba(232,232,235,0.7);
+}
+.ProductLine{
+	text-align:left;
+	color:#222;
+	padding-left:20px;
+	font-size:1em;
+	font-weight: 400;
+}
+#ShoppingCart{
+	color:black;
+	text-align:left;
+	margin:auto;
+	width:50%;
+	height:auto;
+}
+#ProductHolder{
+	box-sizing:border-box;
+	display:inline-block;
+	border-top:1px solid rgba(70,70,70,0.7);
+	padding:20px 20px 0px 0px;
+	width:60%;
+	height:auto;
+}
+.CartProduct{
+	overflow:hidden;
+	box-sizing:border-box;
+	margin-bottom:10px;
+	width:100%;
+	height:140px;
+	border-bottom: 1px solid rgba(70,70,70,0.7);
+	padding:10px;
+	position:relative;
+}
+.CartProductDescription{
+	display:inline-block;
+	padding:0px 10px 10px 10px;
+}
+.CartProduct p{
+	font-weight:300;
+}
+.CartDelete{
+	position:absolute;
+	bottom:6px;
+	font-weight:500;
+	text-decoration:underline;
+}
+.CartPrice{
+	position:absolute;
+	bottom:6px;
+	right:20px;
+}
+#CartSummary{
+	padding:20px;
+	box-sizing:border-box;
+	margin-left:5%;
+	display:inline-block;
+	width:34%;
+	border:1px solid rgba(70,70,70,0.7);
+	height:100%;
+}
+#CartSummary p{
+	padding:6px;
+	font-weight:300;
+}
+#LoginBox{
+	color:black;
+	text-align:center;
+	padding:60px 100px 100px 100px;
+	box-sizing:border-box;
+	width:50vh;
+	height:50vh;
+	background-color:white;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-25vh;
+	margin-left:-20vh;
+}
+.LoginInput{
+	margin:10px 0px 10px 0px;
+	Color:black;
+	padding:6px;
+}
+.SubmitButton{
+	font-size:1.2em;
+	border:none;
+	padding:14px;
+	background-color:black;
+	color:white;
+	margin-top:20px;
+}
 	

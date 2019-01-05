@@ -6,19 +6,26 @@
 <link rel = "stylesheet" type ="text/css" href = "css/Reset.css">
 <link rel = "stylesheet" type ="text/css" media = "screen and (min-device-width:1000px)" href = "css/Desktop.css">
 <link rel = "stylesheet" type ="text/css" media = "screen and (max-device-width:999px)" href = "css/Mobile.css">
+<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 <link rel = "shortcut icon" href ="assets/Logo/etea.png">
 <title>Adidas&reg; | Official Website</title>
 </head>
 <body>
   <div id = "Wrapper">
     <div id = "Main">
-	  <header id ="Header">
-	    <div class="SearchBarOuter">
+	  <header id ="Header" style="display:none">
+	  	<img src="assets/Logo/HeaderImg.png" style ="width:200px;">
+		<h1 class="HeaderSlogan">Impossible Is Nothing</h1>
+	    <div class = "Login">
+		  <div class="SearchBarOuter">
 	      <i class="fas fa-search"></i>
 	      <input class="SearchBar" type ="text" placeholder ="Search adidas">
-	    </div>
-	    <div class = "Login">
-	      <p><i class="fas fa-bell"></i> &nbsp;&nbsp; { Account Name }   &nbsp;&nbsp;| &nbsp;&nbsp;  <i class="fas fa-cog"></i>  &nbsp;&nbsp;  | &nbsp;&nbsp; <i class="fas fa-user-alt"></i>  &nbsp;&nbsp; Log In / Register</p>
+	      </div>
+	      <div class="LoginInfo" ><i class="fas fa-bell"></i><p class="HeaderInfo" id ="AccountName"> &nbsp;&nbsp;</p>
+		  &nbsp;&nbsp;| &nbsp;&nbsp;  <p class="HeaderInfo"><i class="fas fa-cog"></i> </p> &nbsp;&nbsp;  | &nbsp;&nbsp; 
+		  <a href="pages/Login.html"><p class="HeaderInfo" ><i class="fas fa-user-alt"></i></p><p class="HeaderInfo" id="LoginButton">&nbsp;&nbsp; Log In / Register</p></a>
+		  </div>
 	    </div>
 		     <ul class="MobileNav">
 			    <li class = "SideNavLink" style="padding-left:10px;"> Menu &nbsp;&nbsp; <i class="fas fa-chevron-circle-down"></i>
@@ -36,25 +43,21 @@
 	
 	<section class = "Section " id="Section1">
 	     <video autoplay muted loop cover id="Video1">
-           <source src="assets/Video/adidas1080p.mp4" type="video/mp4">
-		   <source src="assets/Video/adidasogg.ogg" type="video/ogg">
+           <source src="assets/Video/FutureCraft.mp4" type="video/mp4">
          </video>
-		 <Span class = "Welcome" id ="Welcome" >Welcome To Adidas</span>
-		 <Span class = "Welcome" id ="Welcome2" >Europe's Most Popular Sportswear Brand Since 2015 Adidas&reg;</span>
-		 <div class = "videoVolume"></div>
-	</section>
-	
-	<!Welcome Message>
-	
-	<div id ="JoinUsNow"> <i class="fas fa-stroopwafel"></i> &nbsp;&nbsp; Join Adidas Today & Recieve A Special Christmas Welcoming Gift.</div>
-	
+		 <Span class = "Welcome" id ="Welcome" >A Video made by adidas&reg; <br>Click for volume</span>
+		 <div class = "videoVolume"><i class="fas fa-volume-mute"></i></div>
+	</section>	
 	<!Section 2>
 	
 	<section class = "Section" id = "Section2">
-	   <a href="Products/Falcons.html"><div class="SectionInfo"><h1>Falcon's Are Back</h1></a>
+	   <a href="products/POD_S3_1.html"><div class="SectionInfo"><h1>POD - S3.1</h1></a>
 		 <ul class="ShoeInfoBuy">
-		    <br> <a href="index.html"><li class ="ShoeInfoBuyNow">Buy Now &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></li></a>
+		    <br> <a href="products/POD_S3_1.html"><li class ="ShoeInfoBuyNow">Buy Now &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></li></a>
 		 </ul>
+		 <img src="assets/SectionBG/POD_0.jpg" id="Section2Img0" style="bottom:100px; left:100px;">
+		 <img src="assets/SectionBG/POD_1.jpg" id="Section2Img1"  style="bottom:200px; left:300px; z-index:2;">
+		 <img src="assets/SectionBG/POD_2.jpg" id="Section2Img2"  style="bottom:300px; left:500px;">
 	   </div>
 	</section>
 	
@@ -63,7 +66,7 @@
 	<section class = "Section" id = "Section3">
 	   <div class="SectionInfo"><h1>ZX 500</h1>
 		 <ul class="ShoeInfoBuy">
-		    <br> <a href="index.html"><li class ="ShoeInfoBuyNow">Buy Now &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></li></a>
+		    <br> <a href="products/Default_Product.html"><li class ="ShoeInfoBuyNow">Buy Now &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></li></a>
 		 </ul>
 	   </div>
 	</section>
@@ -71,9 +74,14 @@
 	<!Section 4>
 	
 	<section class = "Section" id = "Section4">
-	   <div class="SectionInfo"><h1>POD - S3.1</h1>
+	   <div class="SectionImages">
+	   <img class="SectionImage" src ="assets/SectionBG/B3_0.jpg">
+	   <img class="SectionImage" src ="assets/SectionBG/B3_1.jpg">
+	   <img class="SectionImage" src ="assets/SectionBG/B3_2.jpg">
+	   </div>
+	   <a href="products/Falcons.html"><div class="SectionInfo"><h1 style="width:10%">Falcon's Are Back</h1></a>
 		 <ul class="ShoeInfoBuy">
-		    <br> <a href="index.html"><li class ="ShoeInfoBuyNow">Buy Now &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></li></a>
+		    <br> <a href="products/Falcons.html"><li class ="ShoeInfoBuyNow">Shop Now &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></li></a>
 		 </ul>
 	   </div>
 	</section>
@@ -86,7 +94,7 @@
 		  <p class ="ShoeInfoDescription">RESPONSIVE SHOES MADE FOR LONG RUNS ON CITY STREETS.</p>
 		  <br>
 		  <ul class="ShoeInfoBuy">
-		    <br> <a href="index.html"><li class ="ShoeInfoBuyNow">Buy Now &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></li></a>
+		    <br> <a href="products/Default_Product.html"><li class ="ShoeInfoBuyNow">Buy Now &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></li></a>
 		  </ul>
 		</div>
 		
@@ -94,7 +102,7 @@
 		<p class ="ShoeInfoDescription">SHOES THAT BLEND '90S DESIGN AND MODERN CUSHIONING.</p>
 		<br>
 		  <ul class="ShoeInfoBuy">
-		    <br> <a href="index.html"><li class ="ShoeInfoBuyNow">Buy Now &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></li></a>
+		    <br> <a href="products/Default_Product.html"><li class ="ShoeInfoBuyNow">Buy Now &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></li></a>
 		  </ul>
 		</div>
 		
@@ -102,7 +110,7 @@
 		<p class ="ShoeInfoDescription">PRECISION BOOTS RESERVED FOR PLAYERS WHO DARE TO DOMINATE</p>
 		<br>
 		  <ul class="ShoeInfoBuy">
-		    <br> <a href="index.html"><li class ="ShoeInfoBuyNow">Buy Now &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></li></a>
+		    <br> <a href="products/Default_Product.html"><li class ="ShoeInfoBuyNow">Buy Now &nbsp;&nbsp; <i class="fas fa-shopping-cart"></i></li></a>
 		  </ul>
 		</div>
 		
@@ -117,8 +125,6 @@
 	  </div>
 	</div>
 	</section>
-	
-	
 	<!Footer>
 	
 	<footer id = "Footer">
@@ -126,59 +132,59 @@
 	    <div class = "TopLinksInner">
 		  <ul class ="Footerul">
 		     <li><h5>Featured</h5></li>
-			 <li class = "Footerlink"><a href="index.html">New Arrivals</a></li>
-			 <li class = "Footerlink"><a href="index.html">Design Your Own</a></li>
-			 <li class = "Footerlink"><a href="index.html">Shoes</a></li>
-			 <li class = "Footerlink"><a href="index.html">Cloths</a></li>
-			 <li class = "Footerlink"><a href="index.html">Bags</a></li>
-			 <li class = "Footerlink"><a href="index.html">Accessories</a></li>
-			 <li class = "Footerlink"><a href="index.html">Outlet</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">New Arrivals</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Design Your Own</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Shoes</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Cloths</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Bags</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Accessories</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Outlet</a></li>
 		  </ul>
 		  <ul class ="Footerul">
 		     <li><h5>Collections</h5></li>
-			 <li class = "Footerlink"><a href="index.html">Yeezy</a></li>
-			 <li class = "Footerlink"><a href="index.html">adidas EQT</a></li>
-			 <li class = "Footerlink"><a href="index.html">ZX Flux</a></li>
-			 <li class = "Footerlink"><a href="index.html">Original Superstars</a></li>
-		 	 <li class = "Footerlink"><a href="index.html">adidas Crazy</a></li>
-			 <li class = "Footerlink"><a href="index.html">P.O.D System</a></li>
-			 <li class = "Footerlink"><a href="index.html">Y-3</a></li>
-			 <li class = "Footerlink"><a href="index.html">adidas Deerupt</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Yeezy</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">adidas EQT</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">ZX Flux</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Original Superstars</a></li>
+		 	 <li class = "Footerlink"><a href="products/Default_Product.html">adidas Crazy</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">P.O.D System</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Y-3</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">adidas Deerupt</a></li>
 		 </ul>
 		  <ul class ="Footerul">
 		     <li><h5>Brands</h5></li>
-			 <li class = "Footerlink"><a href="index.html">adidas Originals</a></li>
-			 <li class = "Footerlink"><a href="index.html">adidas Athletics</a></li>
-			 <li class = "Footerlink"><a href="index.html">Terrex</a></li>
-			 <li class = "Footerlink"><a href="index.html">Stella Mccartney</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">adidas Originals</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">adidas Athletics</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Terrex</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Stella Mccartney</a></li>
 		  </ul>
 		  <ul class ="Footerul">
 		     <li><h5>Company Info</h5></li>
-			 <li class = "Footerlink"><a href="index.html">About Us</a></li>
-			 <li class = "Footerlink"><a href="index.html">Careers</a></li>
-			 <li class = "Footerlink"><a href="index.html">Press</a></li>
-			 <li class = "Footerlink"><a href="index.html">Student discount</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">About Us</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Careers</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Press</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Student discount</a></li>
 		  </ul>
 		  <ul class ="Footerul">
 		     <li><h5>Support</h5></li>
-			 <li class = "Footerlink"><a href="index.html">Help & Customer Care</a></li>
-			 <li class = "Footerlink"><a href="index.html">Delivery</a></li>
-			 <li class = "Footerlink"><a href="index.html">Returns & Refunds</a></li>
-			 <li class = "Footerlink"><a href="index.html">Size Charts</a></li>
-			 <li class = "Footerlink"><a href="index.html">Store Finder</a></li>
-			 <li class = "Footerlink"><a href="index.html">Mobile Apps</a></li>
-			 <li class = "Footerlink"><a href="index.html">Imprint</a></li>
-			 <li class = "Footerlink"><a href="index.html">Transparency Statement</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Help & Customer Care</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Delivery</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Returns & Refunds</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Size Charts</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Store Finder</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Mobile Apps</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Imprint</a></li>
+			 <li class = "Footerlink"><a href="products/Default_Product.html">Transparency Statement</a></li>
 		  </ul>
 		</div>
 	  </div>
 	  <div class = "BottomLinks">
 	      <ul class ="BottomFooterul">
-		  	 <li class = "Footerlink Bottomlink"><a href="index.html" >&nbsp;&nbsp; Account &nbsp;&nbsp; |</a></li>
-			 <li class = "Footerlink Bottomlink"><a href="index.html" >&nbsp;&nbsp; Checkout  &nbsp;&nbsp;|</a></li>
-			 <li class = "Footerlink Bottomlink"><a href="index.html" >&nbsp;&nbsp; Privacy  &nbsp;&nbsp; |</a></li>
-			 <li class = "Footerlink Bottomlink"><a href="index.html" >&nbsp;&nbsp; Cookies  &nbsp;&nbsp;|</a></li>
-			 <li class = "Footerlink Bottomlink"><a href="index.html" >Terms & Conditions</a></li>
+		  	 <li class = "Footerlink Bottomlink"><a href="products/Default_Product.html" >&nbsp;&nbsp; Account &nbsp;&nbsp; |</a></li>
+			 <li class = "Footerlink Bottomlink"><a href="products/Default_Product.html" >&nbsp;&nbsp; Checkout  &nbsp;&nbsp;|</a></li>
+			 <li class = "Footerlink Bottomlink"><a href="products/Default_Product.html" >&nbsp;&nbsp; Privacy  &nbsp;&nbsp; |</a></li>
+			 <li class = "Footerlink Bottomlink"><a href="products/Default_Product.html" >&nbsp;&nbsp; Cookies  &nbsp;&nbsp;|</a></li>
+			 <li class = "Footerlink Bottomlink"><a href="products/Default_Product.html" >Terms & Conditions</a></li>
 		  </ul>
 	  </div>
 	</footer>
@@ -195,221 +201,221 @@
 	   
 	   	 <!New Arrivals SideNav and Menu>
 			
-	     <a href="index.html" ><div class = "SideNav"style="border-top:1px solid black;;">New</a>
-		   <div class = "Menu" style = "width: 860px;"><h1 class="SideNavH1"><a href="index.html" >New</a></h1>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Shoes</a></h2>
-              <li class = "SideNavLink"><a href="index.html" >All New Shoes</a></li>	 
-			  <li class = "SideNavLink"><a href="index.html" >Continetal 80 Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Gazelle Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Stan Smith Shoes</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Superstar Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Ultraboost shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >NMD_R1 Shoes</a></li>
-              <li class = "SideNavLink"><a href="index.html" >POD-S3.1 Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Falcon Shoes</a></li>
+	     <a href="products/Default_Product.html" ><div class = "SideNav"style="border-top:1px solid black;;">New</a>
+		   <div class = "Menu" style = "width: 860px;"><h1 class="SideNavH1"><a href="products/Default_Product.html" >New</a></h1>
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Shoes</a></h2>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Shoes</a></li>	 
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >Continetal 80 Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Gazelle Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Stan Smith Shoes</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Superstar Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Ultraboost shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >NMD_R1 Shoes</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >POD-S3.1 Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Falcons.html" >Falcon Shoes</a></li>
 			 <li><img class = "MenuImg" style="height:80px;"src = "assets/SideBar/Shoe1.jpg"></li>			  
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Clothing</a></h2>
-			  <li class = "SideNavLink"><a href="index.html" >All New Clothing</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Tracksuits</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Tees</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >SweatShirts</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Hoodies</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Coeeze Pants</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Jackets</a></li>	
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Clothing</a></h2>
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Clothing</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Tracksuits</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Tees</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >SweatShirts</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Hoodies</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Coeeze Pants</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Jackets</a></li>	
 			 <li><img class = "MenuImg" style="height:140px;" src = "assets/SideBar/Tee1.jpg"></li>				  
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Accessories</a></h2>
-              <li class = "SideNavLink"><a href="index.html" >All New Accessories</a></li>	
-			  <li class = "SideNavLink"><a href="index.html" >BackPack Bags</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Beanies</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Socks</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Bucket Hats and Caps</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >CrossBody Bags</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Training Equitment</a></li>	
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Accessories</a></h2>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Accessories</a></li>	
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >BackPack Bags</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Beanies</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Socks</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Bucket Hats and Caps</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >CrossBody Bags</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Training Equitment</a></li>	
 			 <li><img class = "MenuImg" style="height:110px;"src = "assets/SideBar/Bag1.jpg"></li>			  
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Trending</a></h2>
-              <li class = "SideNavLink"><a href="index.html" >All New Trending</a></li>	
-			  <li class = "SideNavLink"><a href="index.html" >Winter Clothing</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >All Black Trainers</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >All White Trainers</a></li>	
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Trending</a></h2>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Trending</a></li>	
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >Winter Clothing</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All Black Trainers</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All White Trainers</a></li>	
             </ul>		
 		   </div>
 		 </div>
 		 <!Men SideNav and Menu>
-		 <a href="index.html" ><div class = "SideNav">Men</a>
-		 <div class = "Menu" style = "width: 860px;"><h1 class="SideNavH1"><a href="index.html" >Men</a></h1>
-		 	 <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Featured</a></h2>
-			  <li class = "SideNavLink"><a href="index.html" >New Arrivals</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Trending</a></li>	
-			  <li class = "SideNavLink"><a href="index.html" >Best Selling</a></li>		
+		 <a href="products/Default_Product.html" ><div class = "SideNav">Men</a>
+		 <div class = "Menu" style = "width: 860px;"><h1 class="SideNavH1"><a href="products/Default_Product.html" >Men</a></h1>
+		 	 <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Featured</a></h2>
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >New Arrivals</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Trending</a></li>	
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >Best Selling</a></li>		
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Shoes</a></h2>
-              <li class = "SideNavLink"><a href="index.html" >All New Shoes</a></li>	 
-			  <li class = "SideNavLink"><a href="index.html" >Continetal 80 Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Gazelle Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Stan Smith Shoes</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Superstar Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Ultraboost shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >NMD_R1 Shoes</a></li>
-              <li class = "SideNavLink"><a href="index.html" >POD-S3.1 Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Falcon Shoes</a></li>
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Shoes</a></h2>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Shoes</a></li>	 
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >Continetal 80 Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Gazelle Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Stan Smith Shoes</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Superstar Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Ultraboost shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >NMD_R1 Shoes</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >POD-S3.1 Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Falcons.html" >Falcon Shoes</a></li>
 			 <li><img class = "MenuImg" style="height:80px;"src = "assets/SideBar/Shoe1.jpg"></li>			  
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Clothing</a></h2>
-			  <li class = "SideNavLink"><a href="index.html" >All New Clothing</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Tracksuits</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Tees</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >SweatShirts</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Hoodies</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Coeeze Pants</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Jackets</a></li>	
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Clothing</a></h2>
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Clothing</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Tracksuits</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Tees</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >SweatShirts</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Hoodies</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Coeeze Pants</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Jackets</a></li>	
 			 <li><img class = "MenuImg" style="height:140px;" src = "assets/SideBar/Tee1.jpg"></li>				  
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Accessories</a></h2>
-              <li class = "SideNavLink"><a href="index.html" >All New Accessories</a></li>	
-			  <li class = "SideNavLink"><a href="index.html" >BackPack Bags</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Beanies</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Socks</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Bucket Hats and Caps</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >CrossBody Bags</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Training Equitment</a></li>	
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Accessories</a></h2>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Accessories</a></li>	
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >BackPack Bags</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Beanies</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Socks</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Bucket Hats and Caps</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >CrossBody Bags</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Training Equitment</a></li>	
 			 <li><img class = "MenuImg" style="height:110px;"src = "assets/SideBar/Bag1.jpg"></li>			  
             </ul>		
 		   </div>
 		 </div>
-		 <a href="index.html" ><div class = "SideNav">Women</a>
-		 <div class = "Menu" style = "width: 860px;"><h1 class="SideNavH1"><a href="index.html" >Women</a></h1>
-		 	 <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Featured</a></h2>
-			  <li class = "SideNavLink"><a href="index.html" >New Arrivals</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Trending</a></li>	
-			  <li class = "SideNavLink"><a href="index.html" >Best Selling</a></li>		
+		 <a href="products/Default_Product.html" ><div class = "SideNav">Women</a>
+		 <div class = "Menu" style = "width: 860px;"><h1 class="SideNavH1"><a href="products/Default_Product.html" >Women</a></h1>
+		 	 <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Featured</a></h2>
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >New Arrivals</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Trending</a></li>	
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >Best Selling</a></li>		
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Shoes</a></h2>
-              <li class = "SideNavLink"><a href="index.html" >All New Shoes</a></li>	 
-			  <li class = "SideNavLink"><a href="index.html" >Continetal 80 Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Gazelle Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Stan Smith Shoes</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Superstar Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Ultraboost shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >NMD_R1 Shoes</a></li>
-              <li class = "SideNavLink"><a href="index.html" >POD-S3.1 Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Falcon Shoes</a></li>
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Shoes</a></h2>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Shoes</a></li>	 
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >Continetal 80 Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Gazelle Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Stan Smith Shoes</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Superstar Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Ultraboost shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >NMD_R1 Shoes</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >POD-S3.1 Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Falcons.html" >Falcon Shoes</a></li>
 			 <li><img class = "MenuImg" style="height:80px;"src = "assets/SideBar/Shoe1.jpg"></li>			  
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Clothing</a></h2>
-			  <li class = "SideNavLink"><a href="index.html" >All New Clothing</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Tracksuits</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Tees</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >SweatShirts</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Hoodies</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Coeeze Pants</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Jackets</a></li>	
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Clothing</a></h2>
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Clothing</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Tracksuits</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Tees</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >SweatShirts</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Hoodies</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Coeeze Pants</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Jackets</a></li>	
 			 <li><img class = "MenuImg" style="height:140px;" src = "assets/SideBar/Tee1.jpg"></li>				  
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Accessories</a></h2>
-              <li class = "SideNavLink"><a href="index.html" >All New Accessories</a></li>	
-			  <li class = "SideNavLink"><a href="index.html" >BackPack Bags</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Beanies</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Socks</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Bucket Hats and Caps</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >CrossBody Bags</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Training Equitment</a></li>	
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Accessories</a></h2>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Accessories</a></li>	
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >BackPack Bags</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Beanies</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Socks</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Bucket Hats and Caps</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >CrossBody Bags</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Training Equitment</a></li>	
 			 <li><img class = "MenuImg" style="height:110px;"src = "assets/SideBar/Bag1.jpg"></li>			  
             </ul>		
 		   </div>
 		 </div>
-		 <a href="index.html" ><div class = "SideNav">Kids</a>
-		 		 <div class = "Menu" style = "width: 860px;"><h1 class="SideNavH1"><a href="index.html" >Kids</a></h1>
-		 	 <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Featured</a></h2>
-			  <li class = "SideNavLink"><a href="index.html" >New Arrivals</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Trending</a></li>	
-			  <li class = "SideNavLink"><a href="index.html" >Best Selling</a></li>		
+		 <a href="products/Default_Product.html" ><div class = "SideNav">Kids</a>
+		 		 <div class = "Menu" style = "width: 860px;"><h1 class="SideNavH1"><a href="products/Default_Product.html" >Kids</a></h1>
+		 	 <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Featured</a></h2>
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >New Arrivals</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Trending</a></li>	
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >Best Selling</a></li>		
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Shoes</a></h2>
-              <li class = "SideNavLink"><a href="index.html" >All New Shoes</a></li>	 
-			  <li class = "SideNavLink"><a href="index.html" >Continetal 80 Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Gazelle Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Stan Smith Shoes</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Superstar Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Ultraboost shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >NMD_R1 Shoes</a></li>
-              <li class = "SideNavLink"><a href="index.html" >POD-S3.1 Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Falcon Shoes</a></li>
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Shoes</a></h2>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Shoes</a></li>	 
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >Continetal 80 Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Gazelle Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Stan Smith Shoes</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Superstar Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Ultraboost shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >NMD_R1 Shoes</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >POD-S3.1 Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Falcons.html" >Falcon Shoes</a></li>
 			 <li><img class = "MenuImg" style="height:80px;"src = "assets/SideBar/Shoe1.jpg"></li>			  
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Clothing</a></h2>
-			  <li class = "SideNavLink"><a href="index.html" >All New Clothing</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Tracksuits</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Tees</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >SweatShirts</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Hoodies</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Coeeze Pants</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Jackets</a></li>	
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Clothing</a></h2>
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Clothing</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Tracksuits</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Tees</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >SweatShirts</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Hoodies</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Coeeze Pants</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Jackets</a></li>	
 			 <li><img class = "MenuImg" style="height:140px;" src = "assets/SideBar/Tee1.jpg"></li>				  
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Accessories</a></h2>
-              <li class = "SideNavLink"><a href="index.html" >All New Accessories</a></li>	
-			  <li class = "SideNavLink"><a href="index.html" >BackPack Bags</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Beanies</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Socks</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Bucket Hats and Caps</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >CrossBody Bags</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Training Equitment</a></li>	
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Accessories</a></h2>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Accessories</a></li>	
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >BackPack Bags</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Beanies</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Socks</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Bucket Hats and Caps</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >CrossBody Bags</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Training Equitment</a></li>	
 			 <li><img class = "MenuImg" style="height:110px;"src = "assets/SideBar/Bag1.jpg"></li>			  
             </ul>		
 		   </div>
 		 </div>
-		 <a href="index.html" ><div class = "SideNav">Collections</a>
-		 		 <div class = "Menu" style = "width: 860px;"><h1 class="SideNavH1"><a href="index.html" >Collections</a></h1>
-		 	 <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Featured</a></h2>
-			  <li class = "SideNavLink"><a href="index.html" >New Arrivals</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Trending</a></li>	
-			  <li class = "SideNavLink"><a href="index.html" >Best Selling</a></li>		
+		 <a href="products/Default_Product.html" ><div class = "SideNav">Collections</a>
+		 		 <div class = "Menu" style = "width: 860px;"><h1 class="SideNavH1"><a href="products/Default_Product.html" >Collections</a></h1>
+		 	 <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Featured</a></h2>
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >New Arrivals</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Trending</a></li>	
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >Best Selling</a></li>		
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Shoes</a></h2>
-              <li class = "SideNavLink"><a href="index.html" >All New Shoes</a></li>	 
-			  <li class = "SideNavLink"><a href="index.html" >Continetal 80 Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Gazelle Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Stan Smith Shoes</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Superstar Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Ultraboost shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >NMD_R1 Shoes</a></li>
-              <li class = "SideNavLink"><a href="index.html" >POD-S3.1 Shoes</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Falcon Shoes</a></li>
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Shoes</a></h2>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Shoes</a></li>	 
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >Continetal 80 Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Gazelle Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Stan Smith Shoes</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Superstar Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Ultraboost shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >NMD_R1 Shoes</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >POD-S3.1 Shoes</a></li>	
+              <li class = "SideNavLink"><a href="products/Falcons.html" >Falcon Shoes</a></li>
 			 <li><img class = "MenuImg" style="height:80px;"src = "assets/SideBar/Shoe1.jpg"></li>			  
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Clothing</a></h2>
-			  <li class = "SideNavLink"><a href="index.html" >All New Clothing</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Tracksuits</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Tees</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >SweatShirts</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Hoodies</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Coeeze Pants</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Jackets</a></li>	
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Clothing</a></h2>
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Clothing</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Tracksuits</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Tees</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >SweatShirts</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Hoodies</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Coeeze Pants</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Jackets</a></li>	
 			 <li><img class = "MenuImg" style="height:140px;" src = "assets/SideBar/Tee1.jpg"></li>				  
             </ul>
-		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="index.html" >Accessories</a></h2>
-              <li class = "SideNavLink"><a href="index.html" >All New Accessories</a></li>	
-			  <li class = "SideNavLink"><a href="index.html" >BackPack Bags</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Beanies</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Socks</a></li>
-              <li class = "SideNavLink"><a href="index.html" >Bucket Hats and Caps</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >CrossBody Bags</a></li>	
-              <li class = "SideNavLink"><a href="index.html" >Training Equitment</a></li>	
+		    <ul class = "SideNavUl"><h2 class ="SideNavH2"><a href="products/Default_Product.html" >Accessories</a></h2>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >All New Accessories</a></li>	
+			  <li class = "SideNavLink"><a href="products/Default_Product.html" >BackPack Bags</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Beanies</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Socks</a></li>
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Bucket Hats and Caps</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >CrossBody Bags</a></li>	
+              <li class = "SideNavLink"><a href="products/Default_Product.html" >Training Equitment</a></li>	
 			 <li><img class = "MenuImg" style="height:110px;"src = "assets/SideBar/Bag1.jpg"></li>			  
             </ul>		
 		   </div>
 		 </div>
-		 <a href="index.html" ><div class = "SideNav">Brands</a></div>
-		 <a href="index.html" ><div class = "SideNav">Sports</a></div>
-		 <a href="index.html" ><div class = "SideNav">Gifts</a></div>
-		 <a href="index.html" ><div class = "SideNav" id ="Settings">Settings</div>
+		 <a href="products/Default_Product.html" ><div class = "SideNav">Brands</a></div>
+		 <a href="products/Default_Product.html" ><div class = "SideNav">Sports</a></div>
+		 <a href="products/Default_Product.html" ><div class = "SideNav">Gifts</a></div>
+		 <a href="products/Default_Product.html" ><div class = "SideNav" id ="Settings">Settings</div>
 	   </div>
 	</div>
 	</div>
 	</div>
 </body>
-<script type ="text/javascript" src = "js/Script.js"></script>
+<script type ="text/javascript" src = "js/Index.js"></script>
 </html>
