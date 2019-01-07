@@ -11,11 +11,9 @@ var Changing;
 
 window.onload = function(){
 	HeaderWelcome();
-	if(screen.width > 999){
 	Main();
 	jqueryWelcome();
 	localData()
-	}
 
 
 }
@@ -33,7 +31,7 @@ function localData(){
 	    console.log(firstLoad);
 	}
 	}
-	catch {}
+	catch (j){}
 }
 
 
@@ -54,6 +52,7 @@ function Main() {
 			$('.videoVolume').html('<i class="fas fa-volume-mute"></i>');
 	    }
 	})
+	
 	//ButtonSliders
 	automatedSlider = setInterval( function(){
 		if(!Changing){
@@ -79,6 +78,7 @@ function Main() {
 
 
 //Apearing words on video
+
 function jqueryWelcome(){
 	var Welcome = $("#Welcome").html();
     $("#Welcome").html("").show();
