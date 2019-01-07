@@ -198,12 +198,6 @@ h2{
 	display:none;
 	border-top: 2px solid black;
 }
-.MobileNav:hover{
-	width:140px;
-}
-.MobileNav:hover .MobileNavDrop{
-	display:block;
-}
 .Logo{
 	
 	width:120px;

@@ -13,7 +13,8 @@ window.onload = function(){
 	HeaderWelcome();
 	Main();
 	jqueryWelcome();
-	localData()
+	localData();
+	MobileNav();
 
 
 }
@@ -183,5 +184,19 @@ function HeaderWelcome(){
 	}
 	}
 	catch (e){
+	}
+}
+
+
+function MobileNav(){
+	var MobileMenu = document.getElementById('MobileNav');
+	var MobileNavDrop = document.getElementById('MobileNavDrop').style;
+	MobileMenu.addEventListener('click', function(i){
+		MobileNavDrop.display = 'block';
+	})
+	$('#Main').addEventListener('click' function(){
+		if(MobileNavDrop.display == 'block'){
+			MobileNavDrop.display = 'none')
+		}
 	}
 }
