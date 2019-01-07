@@ -145,7 +145,7 @@ h2{
 }
 .SectionImages2{
 	display:inline-block;
-	width:30%;
+	width:50%;
 	overflow:hidden;
 	height:100%;
 	background-color:white;
@@ -166,6 +166,7 @@ h2{
 }
 
 #Section1{
+	background-image: url("../assets/SectionBG/Section1Backup.jpg");
 	background-color: rgba(10,10,10,1);
 	overflow:hidden;
 	border:none;
@@ -175,6 +176,7 @@ h2{
 	background-repeat:no-repeat;
 	background-size:cover;
 	position:relative;
+	overflow:hidden;
 }
 .SectionImages{
 	width:100vw;
