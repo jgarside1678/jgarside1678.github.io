@@ -38,19 +38,14 @@ h2{
 	color:#bfbfbf;
 	display:block;
 	width: 100%;
-	height:10%;
+	height:10vw;
 	position:fixed;
-	padding:0px 80px 0px 50px;
 	background-color: #101010;
 	border-bottom:2px solid white;
 
 }
 .HeaderSlogan{
-	display:inline-block;
-	color:white;
-	font-size:1.5em;
-	font-weight:300;
-	margin-top:14px;
+	display:none;
 }
 .SearchBarOuter{
 	font-size:2em;
@@ -101,6 +96,7 @@ h2{
 	display:none;
 }
 .MobileNav{
+	margin: 20px 0xp 0px 20px;
 	border: 4px solid white;
 	border-radius:20px;
 	display:inline-block;
@@ -126,10 +122,6 @@ h2{
 }
 .MobileNav:hover .MobileNavDrop{
 	display:block;
-}
-.Logo{
-	
-	width:120px;
 }
 #Video1{
 	width:100%;
