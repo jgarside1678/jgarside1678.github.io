@@ -194,7 +194,7 @@ function MobileNav(){
 	MobileMenu.addEventListener('click', function(i){
 		MobileNavDrop.display = 'block';
 		setTimeout( function(){
-		  $('MobileNavDrop').fadeOut(2000);
+		  $('#MobileNavDrop').fadeOut(2000);
 	    },3000);
 	})
 }
