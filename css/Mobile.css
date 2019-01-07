@@ -70,7 +70,7 @@ h2{
 #Sidebar{
 	display:none;
 }
-.MobileNav{
+#MobileNav{
 	z-index:10;
 	width:200px;
 	top:30px;
@@ -86,7 +86,7 @@ h2{
 	padding: 20px 20px 10px 20px;
 	background-color:white;
 }
-.MobileNavDrop{
+#MobileNavDrop{
 	z-index:11;
 	width:200px;
 	padding: 20px 20px 10px 20px;
