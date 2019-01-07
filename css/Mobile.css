@@ -514,7 +514,7 @@ h2{
 }
 .ProductPageDefault{
 	padding-top:10px;
-	width:100%;
+	width:100vw;
 	margin:auto;
 	text-align:center;
 	min-height:900px;
