@@ -193,11 +193,8 @@ function MobileNav(){
 	var MobileNavDrop = document.getElementById('MobileNavDrop').style;
 	MobileMenu.addEventListener('click', function(i){
 		MobileNavDrop.display = 'block';
-	})
-	var Main = document.getElementById('Main');
-	Main.addEventListener('click', function(){
-		if(MobileNavDrop.display == 'block'){
-			MobileNavDrop.display = 'none'
-		}
+		setTimeout( function(){
+		  $('MobileNavDrop').fadeOut(2000);
+	    },3000);
 	})
 }
