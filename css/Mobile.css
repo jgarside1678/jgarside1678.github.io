@@ -1,5 +1,6 @@
 
 body{
+	width:100%;
 	background-color:black;
 	margin:0px;
 	overflow-x:hidden;
@@ -512,6 +513,9 @@ h2{
 	margin:auto;
 	padding-right:100px;
 	width:1200px;
+}
+.ProductDetails3 video{
+	width: 90vw;
 }
 .ProductDetailsInfo{
 	width:400px;
