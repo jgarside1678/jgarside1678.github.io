@@ -152,6 +152,9 @@ h2{
     flex-flow: column;
     align-items: flex-start;
 }
+.SectionInfo h1{
+	width:320px !important;
+}
 .SectionImages2{
 	display:inline-block;
 	width:50%;
@@ -175,13 +178,14 @@ h2{
 }
 
 #Section1{
-	padding-top:140px;
+	padding-top:40px;
 	background-image: url("../assets/SectionBG/Section1Backup.jpg");
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-color: rgba(10,10,10,1);
 	overflow:hidden;
 	border:none;
+	height:auto;
 }
 #Section2{
 	background-image: url("../assets/SectionBG/B1.jpg");
