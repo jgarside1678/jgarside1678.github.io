@@ -38,7 +38,7 @@ h2{
 	color:#bfbfbf;
 	display:block;
 	width: 100%;
-	height:10vw;
+	height:16vw;
 	position:fixed;
 	background-color: #101010;
 	border-bottom:2px solid white;
@@ -48,42 +48,22 @@ h2{
 	display:none;
 }
 .SearchBarOuter{
-	font-size:2em;
-	background-color:white;
-	position:relative;
-	display:inline-block;
-	height:50%;
-	width:200px;
-	margin-top:-6px;
-	margin-right:20px;
-	padding-left:24px;
+	display:none;
 }
-.fa-search{
-	position:absolute;
-	top:5px;
-	left:6px;
-	
-}
-.SearchBar{
-	border:none;
-	padding:6px;
-}
-.SearchBar:focus{
-	outline:none;
-}
+
 #Header img{
 	width:auto !important;
 	height:100%;
 }
 .Login{
-	font-size:0.9em;
+	font-size: 2em;
 	float:right;
 	width:auto;
 	height:100%;
 	padding:20px 50px 20px 20px;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
-	margin-right:10%;
+	margin-right:2%;
 }
 .LoginInfo{
 	display:inline-block;
@@ -574,13 +554,14 @@ h2{
 }
 .BreadCrumbs{
 	box-sizing:border-box;
-	padding: 10px 0px 10px 20px;
+	padding: 200px 0px 10px 20px;
 }
 .Crumb{
 	font-weight:200;
 	margin-right:20px;
 	display:inline-block;
 	color:white;
+	font-size:2em;
 	
 }
 #CartRecent{
