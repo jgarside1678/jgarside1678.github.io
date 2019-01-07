@@ -34,7 +34,7 @@ h2{
 	background-color:#111111;
 }
 #Header{
-	z-index:1000;
+	z-index:9;
 	color:#bfbfbf;
 	display:block;
 	width: 100%;
@@ -43,6 +43,7 @@ h2{
 	position:fixed;
 	background-color: #101010;
 	border-bottom:2px solid white;
+	overflow-x:hidden;
 
 }
 .HeaderSlogan{
