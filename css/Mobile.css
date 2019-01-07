@@ -113,15 +113,15 @@ h2{
 }
 #Video1{
 	width:100vw;
-	background-size:cover;
+	height:100%;
 }
 .videoVolume{
 	color:#777;
-	width:30px;
-	height:30px;
+	width:60px;
+	height:60px;
 	position:absolute;
-	top:60px;
-	left:130px;
+	top:150px;
+	left:0px;
 	font-size:1.4em;
 }
 .Welcome{
@@ -145,7 +145,7 @@ h2{
 .SectionInfo{
 	z-index:2;
 	display:inline-block;
-	max-width:200px;
+	max-width:260px;
 	padding:20px;
 	Color:white;
 	display: inline-flex;
