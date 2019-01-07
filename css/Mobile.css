@@ -612,18 +612,17 @@ h2{
 }
 
 .DefaultMessage{
-	width:100%;
+	width:100vw;
 	height:100px;
 	text-align:center;
 	color:black;
-	padding:200px 20px 20px 10px;
+	padding:200px 20px 20px 20px;
 	box-sizing:border-box;
-	margin-left:-50px;
 }
 .AvailableProducts{
 	box-sizing:border-box;
 	height:100%;
-	padding:100px 200px 200px 100px;
+	padding:100px 200px 200px 200px;
 }
 .AvailableProduct{
 	overflow:hidden;
