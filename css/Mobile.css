@@ -70,6 +70,7 @@ h2{
 	display:none;
 }
 .MobileNav{
+	max-height:80px;
 	top:20px;
 	right:100px;
 	position:absolute;
@@ -504,7 +505,7 @@ h2{
 }
 #ProductImagesLarge{
 	position:absolute;
-	top:48vh;
+	bottom:0;
 	height:100vw;
 	min-height:800px;
 	width:100vw;
