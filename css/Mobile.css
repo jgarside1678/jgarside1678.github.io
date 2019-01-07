@@ -97,11 +97,11 @@ h2{
 	display:none;
 	border-top: 2px solid black;
 }
-.MobileNav:hover{
+.MobileNav:hover, .MobileNav:active{
 	height:auto;
 	max-height:20vh;
 }
-.MobileNav:hover .MobileNavDrop{
+.MobileNav:hover, .MobileNav:active .MobileNavDrop{
 	display:block;
 }
 #Video1{
