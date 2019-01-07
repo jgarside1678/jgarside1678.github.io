@@ -38,8 +38,8 @@ h2{
 	color:#bfbfbf;
 	display:block;
 	width: 100%;
-	height:16vw;
-	max-height:8vh;
+	height:100px;
+	max-height:10vh;
 	position:fixed;
 	background-color: #101010;
 	border-bottom:2px solid white;
