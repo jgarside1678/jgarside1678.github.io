@@ -20,8 +20,8 @@ window.onload = function(){
 
 }
 function localData(){
-	
-	function firstLoad(){
+
+    try{
 	if(localStorage.getItem('FirstLoad')){
 		firstLoad = 'False';
 	}
@@ -29,16 +29,18 @@ function localData(){
 	    localStorage.setItem('FirstLoad', 'True');
 		firstLoad = 'True';
 	}
-	}
 	if(firstLoad == "True"){ 
 	    console.log(firstLoad);
 	}
+	}
+	catch {}
 }
 
 
 
 function Main() {
 	//Video Sound
+	localData();
 	Section1.addEventListener('click', function(){
 		if(video.muted){
 		console.log('Video Sound: True')
@@ -172,10 +174,14 @@ function isOverflown(element) {
 
 function HeaderWelcome(){
 	var AccountName = document.getElementById('AccountName');
+	try{
 	if(localStorage.getItem('Username')){
 		var UserName = localStorage.getItem('Username')
 		console.log(UserName);
 		AccountName.innerHTML = ' &nbsp;&nbsp; Welcome Back &nbsp;&nbsp;'+UserName+'';
 		$('#LoginButton').html('&nbsp;&nbsp; Log Out');
+	}
+	}
+	catch (e){
 	}
 }

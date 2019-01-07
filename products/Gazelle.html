@@ -7,14 +7,16 @@
 <link rel = "stylesheet" type ="text/css" media = "screen and (min-device-width:1000px)" href = "../css/Desktop.css">
 <link rel = "stylesheet" type ="text/css" media = "screen and (max-device-width:999px)" href = "../css/Mobile.css">
 <link rel = "shortcut icon" href ="../assets/Logo/etea.png">
+<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 <title>Adidas&reg; | Official Website</title>
 </head>
 <body>
   <div id = "Wrapper">
-    <div id = "Main">
+    <div id = "Main" data-shoetype="Gazelle">
 	  <header id ="Header">
-	  	<img src="../assets/Logo/HeaderImg.png" style ="width:200px;">
+	    <img src="../assets/Logo/HeaderImg.png" style ="width:200px;">
 		<h1 class="HeaderSlogan">Impossible Is Nothing</h1>
 	    <div class = "Login">
 		  <div class="SearchBarOuter">
@@ -23,7 +25,7 @@
 	      </div>
 	      <div class="LoginInfo" ><i class="fas fa-bell"></i><p class="HeaderInfo" id ="AccountName"> &nbsp;&nbsp;</p>
 		  &nbsp;&nbsp;| &nbsp;&nbsp;  <p class="HeaderInfo"><i class="fas fa-cog"></i> </p> &nbsp;&nbsp;  | &nbsp;&nbsp; 
-		  <a href="../pages/Login.html"><p class="HeaderInfo" ><i class="fas fa-user-alt"></i></p><p class="HeaderInfo" id="LoginButton"> &nbsp;&nbsp; Log In / Register</p></a>
+		  <a href="../pages/Login.html"><p class="HeaderInfo" ><i class="fas fa-user-alt"></i></p> <p class="HeaderInfo" id="LoginButton"> &nbsp;&nbsp; Log In / Register</p></a>
 		  </div>
 	    </div>
 		     <ul class="MobileNav">
@@ -37,44 +39,89 @@
 				</ul>
 			 </ul>
 	  </header>
-	
+	  
 	<section class="ProductPageSection Section" style ="padding-top:52px; background-color:#222;">
 	  <div class="BreadCrumbs">
-	    <a href="../index.html"><p class="Crumb">/ &nbsp;&nbsp; Home</p></a> 
-		<a href="Default_Product.html"><p class="Crumb">/ &nbsp;&nbsp; Unavailable Product</p></a>
+	    <a href="../index.html"><p class="Crumb">/ &nbsp;&nbsp; Home</p></a>
+		<a href="Default_Product.html"><p class="Crumb">/ &nbsp;&nbsp; Mens</p></a>    
+		<a href="Gazelle.html"><p class="Crumb">/ &nbsp;&nbsp; Gazelle</p></a>
 	  </div>
 	</section>
-	<section class="ProductPageSection Section">
-	    <section class="ProductPageDefault">
-		    <div class="DefaultMessage">
-			<h1>Sorry This Product Is Not Currently Available, Why not try instead...</h1>
-			</div>
-			<div class ="AvailableProducts">
-			<a href="Falcons.html"><div class="AvailableProduct">
-			<img class="AvailableProductImage" src="../assets/Shoes/Falcon/Falcon_1_0.jpg">
-			<p class="AvailableProductTitle">Falcon Shoes</p>
-			<p class="AvailableProductRating" data-stars="4.5" data-ratings-numbers="491"></p>
-			<p class="AvailableProductDescription">A retro running style inspired by '90s fashion and electronic dance music. </p>
-			</div></a>
-	     	<a href="ZX500.html"><div class="AvailableProduct">
-			<img class="AvailableProductImage" src="../assets/Shoes/ZX500/ZX500_2_0.jpg">
-			<p class="AvailableProductTitle">ZX500 RM Shoes</p>
-			<p class="AvailableProductRating" data-stars="3.9"data-ratings-numbers="182"></p>
-			<p class="AvailableProductDescription">An '80s ZX running style remade with modern cushioning.</p>
-			</div></a>
-		    <a href="POD_S3_1.html"><div class="AvailableProduct">
-			<img class="AvailableProductImage" src="../assets/Shoes/POD/POD_1_0.jpg">
-			<p class="AvailableProductTitle">POD - S3.1</p>
-			<p class="AvailableProductRating"  data-stars="4.1" data-ratings-numbers="1141"></p>
-			<p class="AvailableProductDescription">Shoes that blend '90s design and modern cushioning.</p>
-			</div></a>
-	    	<a href="Gazelle.html"><div class="AvailableProduct">
-			<img class="AvailableProductImage" src="../assets/Shoes/Gazelle/Gazelle_0_0.jpg">
-			<p class="AvailableProductTitle">Gazelle</p>
-			<p class="AvailableProductRating"  data-stars="4.9" data-ratings-numbers="2096"></p>
-			<p class="AvailableProductDescription">A faithful reissue of the 1991 Gazelle.</p>
-			</div></a>
-			</div>
+	
+	<section class="ProductPageSection Section" style="color:black; background-color:white; text-align:center; padding:10px 10px 0px 10px; position:relative;">
+	    <p> UP TO 50% OFF STARTS NOW &nbsp;&nbsp; 30 DAY FREE RETURNS &nbsp;&nbsp; FREE DELIVERY OVER £50</p>
+		<div id="CartRecent">
+	    </div>
+	    <Section class="ProductPageSectionDisplay">
+		<div id="ProductImagesLarge">
+		<img class="ProductImageLarge" id="PIL1" src="../assets/Shoes/Falcon/Falcon_0_1.jpg">
+		</div>
+		<div id="ProductImagesSmall">
+		</div>
+		<div id="ProductDescription">
+		   <h1 class ="ProductTitle">GAZELLE SHOES</h1>
+		   <p class="ProductLine">THE 1991 GAZELLE RETURNS IN A ONE-TO-ONE REISSUE.</p><br>
+		   <p class="ProductLine" id ="ProductPrice" style="font-size:1.4em;"> &pound;67.95 -  &pound;90.95</p>
+		   <div class ="ProductQuantity">
+		        <p id ="SelectedQuantity">1</p>
+				<button id="DropDownQuantity"><i class="fas fa-chevron-down"></i></button>
+				<div id= "OtherQuantitys">
+		        <ul class="QuantityChoices">
+				  <li class="Quantity" id="Quantity1" data-quantity="1">1</li>
+			      <li class="Quantity" id="Quantity2" data-quantity="2">2</li>
+				  <li class="Quantity" id="Quantity3" data-quantity="3">3</li>
+				  <li class="Quantity" id="Quantity4" data-quantity="4">4</li>
+				  <li class="Quantity" id="Quantity5" data-quantity="5">5</li>
+				  <li class="Quantity" id="Quantity6" data-quantity="6">6</li>
+				  <li class="Quantity" id="Quantity7" data-quantity="7">7</li>
+			    </ul>
+			    </div>
+		   </div>
+		   <p class="ProductLine" style="font-size:1.6em;">Available Colours</p>
+		   <p class="ProductLine AvailableProductRating" data-stars="4.9" data-ratings-numbers="791"></p>
+		   <div id="ProductColours" data="1">
+		   </div>
+		   <div id ="SizeChart">
+		     <p class="ProductLine">Select a size ( price may vary )</p><br>
+		     <div class="Size" id ="Size6" data-size="6" data-price="67.95">6</div>
+		     <div class="Size" id ="Size6.5" data-size="6.5" data-price="67.95">6.5</div>
+		     <div class="Size" id ="Size7" data-size="7" data-price="67.95">7</div>
+		     <div class="Size" id ="Size7.5" data-size="7.5" data-price="67.95">7.5</div>
+		     <div class="Size" id ="Size8" data-size="8" data-price="74.95">8</div>
+		     <div class="Size" id ="Size8.5" data-size="8.5" data-price="74.95">8.5</div>
+		     <div class="Size" id ="Size9" data-size="9" data-price="74.95">9</div>
+		     <div class="Size" id ="Size9.5" data-size="9.5" data-price="74.95">9.5</div>
+		     <div class="Size" id ="Size10" data-size="10" data-price="82.95">10</div>
+		     <div class="Size" id ="Size10.5" data-size="10.5" data-price="82.95">10.5</div>
+		     <div class="Size" id ="Size11" data-size="11" data-price="82.95">11</div>
+		     <div class="Size" id ="Size11.5" data-size="11.5" data-price="82.95">11.5</div>
+		     <div class="Size" id ="Size12" data-size="12" data-price="90.95">12</div>
+		     <div class="Size" id ="Size12.5" data-size="12.5" data-price="90.95">12.5</div>
+		   </div>
+		   <button class="CartButton" id ="AddToCartButton" >Add to Shopping Cart</button>
+		   <a href="../pages/Cart.html"><button class="CartButton" id ="ViewCartButton" >View Cart</button></a>
+		   <p class="ProductLine" style="Margin-top:40px; font-size:1.2em;"><i class="far fa-check-circle" style="color: green;"></i> &nbsp;&nbsp; Free UK 1st Class Delivery</p>
+		</div>
+		</section>
+	</section>
+	<section class="ProductPageSection Section"  Style="text-align:center;">
+	    <section class="ProductPageSectionDetails" Style="text-align:center;">
+		<h1 class="ProductDetails" >PRODUCT DETAILS</h1>
+		<div class="ProductDetails2">
+		   <div class="ProductDetailsInfo">
+		    <h1 style="font-size:2em;">GAZELLE SHOES</h1><br>
+			<h2 style="font-size:1.4em; font-weight:400;">THE 1991 GAZELLE RETURNS IN A ONE-TO-ONE REISSUE.</h2><br>
+			<p style="font-size:1.2em; font-weight:300; font-family:'Inconsolata', monospace; margin-bottom:10px;">A low-profile classic. The Gazelle shoe started life as a football trainer and grew into an iconic streetwear staple. This pair honours the favorite version of 1991, with the same materials, colours and slightly wider proportions. A pigskin leather upper gives these shoes a smooth touch and soft feel.</p>
+		   </div>
+		   <div class="ProductDetailsImage">
+		      <img src ="../assets/Shoes/Gazelle/GazelleDetailImage.jpg" style="width:100%; height:100%;">
+		   </div>
+		</div>
+		<div class="ProductDetails3">
+		   <video controls style=" width:100%;">
+           <source src="../assets/Shoes/Gazelle/Gazelle.mp4" type="video/mp4">
+           </video>
+		</div>
 		</section>
 	</section>
 	
@@ -99,7 +146,7 @@
 		     <li><h5>Collections</h5></li>
 			 <li class = "Footerlink"><a href="Default_Product.html">Yeezy</a></li>
 			 <li class = "Footerlink"><a href="Default_Product.html">adidas EQT</a></li>
-			 <li class = "Footerlink"><a href="Default_Product.html.html">ZX Flux</a></li>
+			 <li class = "Footerlink"><a href="Default_Product.html">ZX Flux</a></li>
 			 <li class = "Footerlink"><a href="Default_Product.html">Original Superstars</a></li>
 		 	 <li class = "Footerlink"><a href="Default_Product.html">adidas Crazy</a></li>
 			 <li class = "Footerlink"><a href="Default_Product.html">P.O.D System</a></li>

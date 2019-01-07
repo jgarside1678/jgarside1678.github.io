@@ -9,9 +9,7 @@ var ActualColourData;
 
 
 window.onload = function(){
-	if(screen.width > 999){
 	Main();
-	}
 
 
 }
@@ -54,12 +52,19 @@ function Ratings(e){
 
     for(i=0;i< AvailableProductRating.length; i++) {
     var RatingStars = AvailableProductRating[i].getAttribute('data-stars');
+	var Parts = RatingStars.toString().split('.');
+	var Number = parseInt(Parts[0]);
+	var Decimal = parseInt(Parts[1]);
+    var DecimalStar = 4 + Decimal;
 	var RatingNumbers = AvailableProductRating[i].getAttribute('data-ratings-numbers');
 
-	for(var v = 0; v < RatingStars; v++){
+	for(var v = 0; v < Number; v++){
 		AvailableProductRating[i].innerHTML += '<i class="fas fa-star"></i>';
 	}
-	AvailableProductRating[i].innerHTML += '&nbsp;&nbsp;'+RatingNumbers+'';
+	if(Decimal != 0){
+	   AvailableProductRating[i].innerHTML += '<i style="width:'+DecimalStar+'px; overflow:hidden;" class="fas fa-star"></i>';
+	}
+	AvailableProductRating[i].innerHTML += '&nbsp;&nbsp; &nbsp;&nbsp;'+RatingNumbers+'';
 	console.log(RatingStars);
   }
 }
@@ -204,10 +209,14 @@ function AddToCart(){
 
 function HeaderWelcome(){
 	var AccountName = document.getElementById('AccountName');
+	try{
 	if(localStorage.getItem('Username')){
 		var UserName = localStorage.getItem('Username')
 		console.log(UserName);
 		AccountName.innerHTML = ' &nbsp;&nbsp; Welcome Back &nbsp;&nbsp;'+UserName+'';
 		$('#LoginButton').html('&nbsp;&nbsp; Log Out');
+	}
+	}
+	catch (e){
 	}
 }

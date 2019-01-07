@@ -77,10 +77,14 @@ function DeleteProduct(){
 }
 function HeaderWelcome(){
 	var AccountName = document.getElementById('AccountName');
+	try{
 	if(localStorage.getItem('Username')){
 		var UserName = localStorage.getItem('Username')
 		console.log(UserName);
 		AccountName.innerHTML = ' &nbsp;&nbsp; Welcome Back &nbsp;&nbsp;'+UserName+'';
 		$('#LoginButton').html('&nbsp;&nbsp; Log Out');
+	}
+	}
+	catch (e){
 	}
 }
