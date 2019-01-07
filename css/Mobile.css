@@ -728,7 +728,7 @@ h2{
 	color:black;
 	text-align:left;
 	margin:auto;
-	width:50%;
+	width:90%;
 	height:auto;
 }
 #ProductHolder{
@@ -774,7 +774,7 @@ h2{
 	display:inline-block;
 	width:34%;
 	border:1px solid rgba(70,70,70,0.7);
-	height:100%;
+	height:auto;
 }
 #CartSummary p{
 	padding:6px;
