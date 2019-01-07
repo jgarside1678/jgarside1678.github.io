@@ -197,6 +197,7 @@ h2{
 #Section2 img{
 	display:inline-block;
 	width:50vw;
+	border:none !important;
 	height:50%;
 }
 #Section3{
