@@ -497,6 +497,7 @@ h2{
 	background-color:white;
 }
 .ProductDetails{
+	width:100vw;
 	padding-right:100px;
 	color:black; 
 	font-weight:1000;
@@ -505,7 +506,7 @@ h2{
 .ProductDetails2{
 	padding:60px 100px 60px 0px;
 	margin:auto;
-	width:1200px;
+	width:100vw;
 	height:auto;
 	color:black;
 	font-weight:800;
@@ -513,7 +514,7 @@ h2{
 .ProductDetails3{
 	margin:auto;
 	padding-right:100px;
-	width:80vw;
+	width:100vw;
 }
 .ProductDetailsInfo{
 	width:400px;
