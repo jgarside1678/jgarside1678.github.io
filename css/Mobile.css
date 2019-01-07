@@ -70,6 +70,7 @@ h2{
 	display:none;
 }
 .MobileNav{
+	width:200px;
 	max-height:6vh;
 	top:20px;
 	right:100px;
@@ -84,9 +85,11 @@ h2{
 	padding: 20px 20px 10px 20px;
 	height:auto;
 	background-color:white;
+	width:
 }
 .MobileNavDrop{
-	padding:20px 0px 0px 10px;
+	width:200px;
+	padding: 20px 20px 10px 20px;
 	box-sizing:border-box;
 	background-color:white;
 	text-align:left;
