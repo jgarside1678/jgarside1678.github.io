@@ -43,7 +43,7 @@ h2{
 	position:fixed;
 	background-color: #101010;
 	border-bottom:2px solid white;
-	overflow-x:hidden;
+	overflow-y:visible;
 
 }
 .HeaderSlogan{
@@ -88,7 +88,7 @@ h2{
 }
 #MobileNavDrop{
 	z-index:11;
-	width:200px;
+	width:inherit;
 	padding: 20px 20px 10px 20px;
 	box-sizing:border-box;
 	background-color:white;
