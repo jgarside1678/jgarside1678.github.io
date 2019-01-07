@@ -94,7 +94,6 @@ h2{
 	border-top: 2px solid black;
 }
 .MobileNav:hover{
-	width:30%;
 }
 .MobileNav:hover .MobileNavDrop{
 	display:block;
