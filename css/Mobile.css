@@ -176,6 +176,7 @@ h2{
 }
 
 #Section1{
+	padding:140px;
 	background-image: url("../assets/SectionBG/Section1Backup.jpg");
 	background-size:cover;
 	background-repeat:no-repeat;
