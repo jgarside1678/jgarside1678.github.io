@@ -25,19 +25,8 @@ h2{
 	height:auto;
 	width:100%;
 	background-color:#111111;
-	display:-ms-grid;
-	display:grid;
-	-ms-grid-columns: 120px	100%;
-	grid-template-columns: 120px 100%;
-	-ms-grid-rows: auto;
-	grid-template-rows: auto;
-    grid-template-areas:
-	"Sidebar Main";
 }
 #Main{
-	-ms-grid-row: 1;
-	-ms-grid-column: 2;
-	grid-area: Main;
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 	background-color:#111111;
@@ -102,84 +91,12 @@ h2{
 	display:inline-block;
 }
 #Sidebar{
-	-ms-grid-row:1;
-	-ms-grid-column:1;
-	grid-area:Sidebar;
-	-webkit-box-sizing:border-box;
-	box-sizing:border-box;
-	background-color:black;
-}
-.FixedSideBar{
-	z-index:100;
-	position:fixed;
-	width:120px;
-	height:100%;
-	background-color:#101010;
-	box-shadow: 0px 0px 6px 0px black;
-}
-.SideWidget{
-	z-index:100;
-	height:100%;
-	width:100%;
-	-webkit-box-sizing:border-box;
-	box-sizing:border-box;
-	
+	display:none;
 }
 
-.SideNav{
-	z-index:100;
-	padding:20px 0px 0px 20px;
-	height:58px;
-	font-size: 1em;
-	width:100%;
-	display:block;
-	-webkit-box-sizing:border-box;
-	box-sizing:border-box;
-	background-color:transparent;
-	border:none;
-	color:#bbb;
-	font-weight:bold;
-	position:relative;
-	text-align:left;
-	
-}
-#Settings{
-	position:absolute;
-	bottom:0px;
-}
-.Menu{
-	padding: 0px 50px 50px 50px;
-	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	margin: auto;
-	top:0px;
-	left:120px;
-	display:none;
-	position:absolute;
-	height:auto;
-	background-color:white;
-	z-index: 1000;
-	box-shadow: 1px 1px black, 1px -1px black, 0px -1px black, 0px 1px black;
-}
-.MenuImg{
-	margin-top:20px;
-	width:auto;
-	float:left;
-}
-.SideNav a{
-	color:#bbb;
-}
-.SideNav:hover .Menu{
-	display:inline-block;
-}
-.SideNav:hover{
-	background-color:white;
-}
-.SideNav:hover a{
-	color:black;
-}
+
 .MobileNav{
-	display:none;
+	display:block;
 	transition-duration:0.5s;
 	box-sizing:border-box;
 	font-size:1.4em;
