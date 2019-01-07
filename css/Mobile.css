@@ -109,7 +109,6 @@ h2{
 	font-size:3em;
 	color:#bbb;
 	padding: 10%;
-	width:20%;
 	height:auto;
 	background-color:#101010;
 }
@@ -467,7 +466,8 @@ h2{
 /* PRODUCT PAGES  */
 
 .ProductPageSection{
-	padding-top:10%;
+	padding-top:20%;
+	width:100vw;
 	height:auto;
 	overflow:hidden;
 	box-sizing:border-box;
