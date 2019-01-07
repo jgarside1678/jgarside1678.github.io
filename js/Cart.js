@@ -7,6 +7,7 @@ var TotalPrice;
 window.onload = function(){
 	main();
 	DeleteProduct();
+	MobileNav()
 }
 
 function main(){
@@ -87,4 +88,16 @@ function HeaderWelcome(){
 	}
 	catch (e){
 	}
+}
+
+//Mobile Navigation
+function MobileNav(){
+	var MobileMenu = document.getElementById('MobileNav');
+	var MobileNavDrop = document.getElementById('MobileNavDrop').style;
+	MobileMenu.addEventListener('click', function(i){
+		MobileNavDrop.display = 'block';
+		setTimeout( function(){
+		  $('#MobileNavDrop').fadeOut(2000);
+	    },3000);
+	})
 }

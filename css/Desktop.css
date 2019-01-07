@@ -178,7 +178,7 @@ h2{
 .SideNav:hover a{
 	color:black;
 }
-.MobileNav{
+#MobileNav{
 	display:none;
 	transition-duration:0.5s;
 	box-sizing:border-box;
@@ -189,7 +189,7 @@ h2{
 	height:100%;
 	background-color:#101010;
 }
-.MobileNavDrop{
+#MobileNavDrop{
 	width:140px;
 	padding:20px 0px 0px 10px;
 	box-sizing:border-box;

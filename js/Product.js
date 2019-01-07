@@ -43,6 +43,7 @@ function Main(){
 	SizeSelector();
 	QuantitySelector()	
 	AddToCart();
+	MobileNav()
 	}
 	Ratings();
 	
@@ -219,4 +220,16 @@ function HeaderWelcome(){
 	}
 	catch (e){
 	}
+}
+
+
+function MobileNav(){
+	var MobileMenu = document.getElementById('MobileNav');
+	var MobileNavDrop = document.getElementById('MobileNavDrop').style;
+	MobileMenu.addEventListener('click', function(i){
+		MobileNavDrop.display = 'block';
+		setTimeout( function(){
+		  $('#MobileNavDrop').fadeOut(2000);
+	    },3000);
+	})
 }
