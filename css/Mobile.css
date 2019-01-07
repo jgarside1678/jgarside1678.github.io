@@ -467,6 +467,7 @@ h2{
 /* PRODUCT PAGES  */
 
 .ProductPageSection{
+	padding-top:10%;
 	height:auto;
 	overflow:hidden;
 	box-sizing:border-box;
