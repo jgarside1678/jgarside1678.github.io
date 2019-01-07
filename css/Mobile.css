@@ -101,7 +101,7 @@ h2{
 }
 .MobileNav:hover{
 	height:400px;
-	max-height:20vh;
+	max-height:400px;
 }
 
 .MobileNav:hover .MobileNavDrop{
