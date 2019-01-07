@@ -103,14 +103,8 @@ h2{
 	height:400px;
 	max-height:20vh;
 }
-.MobileNav:active{
-	 height:auto;
-	max-height:20vh;
-}
+
 .MobileNav:hover .MobileNavDrop{
-	display:block;
-}
-.MobileNav:active .MobileNavDrop{
 	display:block;
 }
 #Video1{
