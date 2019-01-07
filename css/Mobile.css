@@ -145,7 +145,7 @@ h2{
 .SectionInfo{
 	z-index:2;
 	display:inline-block;
-	max-width:260px;
+	max-width:320px;
 	padding:20px;
 	Color:white;
 	display: inline-flex;
@@ -175,7 +175,7 @@ h2{
 }
 
 #Section1{
-	padding:140px;
+	padding-top:140px;
 	background-image: url("../assets/SectionBG/Section1Backup.jpg");
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -381,7 +381,7 @@ h2{
 	position:absolute;
 	left:50%;
 	margin-left:-350px;
-	height:200px;
+	height:210px;
 	overflow:hidden;
 	top:20%;
 	box-sizing:border-box;
