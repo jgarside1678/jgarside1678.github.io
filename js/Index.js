@@ -194,9 +194,10 @@ function MobileNav(){
 	MobileMenu.addEventListener('click', function(i){
 		MobileNavDrop.display = 'block';
 	})
-	$('#Main').addEventListener('click' function(){
+	var Main = document.getElementById('Main');
+	Main.addEventListener('click', function(){
 		if(MobileNavDrop.display == 'block'){
-			MobileNavDrop.display = 'none')
+			MobileNavDrop.display = 'none'
 		}
-	}
+	})
 }
