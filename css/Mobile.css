@@ -86,8 +86,8 @@ h2{
 	transition-duration:0.5s;
 	box-sizing:border-box;
 	font-size:2em;
-	color:#bbb;
-	padding: 1%;
+	color:black;
+	padding: 20px 20px 20px 20px;
 	height:auto;
 	background-color:white;
 }
