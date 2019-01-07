@@ -87,7 +87,6 @@ h2{
 }
 .MobileNavDrop{
 	z-index:11;
-	left:0px;
 	width:200px;
 	padding: 20px 20px 10px 20px;
 	box-sizing:border-box;
@@ -96,11 +95,11 @@ h2{
 	display:none;
 	border-top: 2px solid black;
 }
-.MobileNav:hover{
+.MobileNav:active{
 	height:400px;
 }
 
-.MobileNav:hover .MobileNavDrop{
+.MobileNav:active .MobileNavDrop{
 	display:block;
 }
 #Video1{
