@@ -888,8 +888,6 @@ h2{
 	height:100%;
 }
 #LoginBoxOuter{
-	background-color:transparent;
-	border: 30px solid rgba(255, 255, 255, .3);
 	position:absolute;
 	top:50%;
 	left:50%;
